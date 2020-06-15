@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario Registro De Datos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <h1>Formulario Registro De Datos</h1>
+
+        <form name="form1" action="/PrimerFormulario/Formulario" method="post" >    
+
+            Usuario: <input type="text" name="Usuario" />
+            <br>
+            Password: <input type="password" name="Password" />
+            <br>
+
+            <p>
+                Tecnologias de Interes:<br>
+                <input type="radio" name="interes" value="Java"> Java<br>
+                <input type="radio" name="interes" value=".Net"> .NET<br>
+                <input type="radio" name="interes" value="Python"> Python
+            </p>
+
+            <p>
+                Género:
+                <select name="genero">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select>
+            </p>
+
+            <p>
+                Ocupacion:
+                <select name="ocupacion">
+                    <option>Ingeniero</option>
+                    <option>Licenciado</option>
+                </select>
+            </p>
+
+            <p>
+                Musica Favorita:<br>
+                <select multiple name="musica[]">
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="electronica">Electronica</option>
+                </select>
+            </p>
+
+            <p>
+                Comentarios:<br>
+                <textarea name="comentarios"></textarea>
+            </p>
+
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpiar">
+        </form>
+
+    </body>
+</html>
